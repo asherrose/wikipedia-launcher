@@ -1,0 +1,7 @@
+import wikipedia
+import webbrowser
+randPage = wikipedia.random(pages=1)
+print (randPage)
+randUrl = wikipedia.page(randPage).url
+print (randUrl)
+webbrowser.open_new(randUrl)
